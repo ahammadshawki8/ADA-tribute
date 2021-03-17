@@ -1,0 +1,86 @@
+@import "config";
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6em;
+}
+
+body { 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+#showcase {
+    background-image: url(img/ada-bg.jpg);
+    background-size: cover;
+    height: 700px;
+    text-align: right;
+
+    h1 {
+        font-size: 55px;
+        position: relative;
+        top: 230px;
+        right: 190px;
+    }
+
+    h2 {
+        position: relative;
+        top: 210px;
+        right: 240px;
+        color: $primary-color;
+    }
+
+    ul {
+        position: relative;
+        top: 200px;
+        right: 180px;
+
+        li {
+            list-style: none;
+            display: inline-block;
+            padding: 5px 10px;
+            margin: 20px 8px;
+            background-color: $secondary-color;
+            border-radius: 10px;
+            a {
+                font-size: 16px;
+                text-decoration: none;
+                color: black;
+            }
+
+            a:hover {
+                border-radius: 15px;
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+main {
+    margin: auto;
+    width: 80%;
+    h1 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+}
+
+footer {
+    background: $secondary-color;
+    margin-top: 50px;
+
+    p {
+        font-size: 17px;
+        padding: 30px 0;
+        letter-spacing: 2px;
+    }
+}
+
+@import "mobile";

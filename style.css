@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6em;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+}
+
+#showcase {
+  background-image: url(img/ada-bg.jpg);
+  background-size: cover;
+  height: 700px;
+  text-align: right;
+}
+
+#showcase h1 {
+  font-size: 55px;
+  position: relative;
+  top: 230px;
+  right: 190px;
+}
+
+#showcase h2 {
+  position: relative;
+  top: 210px;
+  right: 240px;
+  color: #fff;
+}
+
+#showcase ul {
+  position: relative;
+  top: 200px;
+  right: 180px;
+}
+
+#showcase ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 20px 8px;
+  background-color: #2da12d;
+  border-radius: 10px;
+}
+
+#showcase ul li a {
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+}
+
+#showcase ul li a:hover {
+  border-radius: 15px;
+  color: #fff;
+}
+
+main {
+  margin: auto;
+  width: 80%;
+}
+
+main h1 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+main p {
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+footer {
+  background: #2da12d;
+  margin-top: 50px;
+}
+
+footer p {
+  font-size: 17px;
+  padding: 30px 0;
+  letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 1125px) {
+  #showcase {
+    text-align: center;
+  }
+  #showcase header {
+    padding-top: 300px;
+    color: #fff;
+  }
+  #showcase h1, #showcase h2, #showcase ul {
+    position: static;
+  }
+  #showcase h1 {
+    height: 1.1em;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #showcase {
+    background-position: 20%;
+  }
+  #showcase h1 {
+    font-size: 40px;
+  }
+  #showcase h2 {
+    font-size: 20px;
+  }
+  #showcase ul li {
+    margin: 15px 3px;
+  }
+  main {
+    width: 90%;
+  }
+  main h1 {
+    font-size: 30px;
+  }
+}
