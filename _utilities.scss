@@ -1,0 +1,28 @@
+// Container
+.container {
+    width: 80%;
+    margin: 0 auto; 
+    overflow: auto;
+}
+
+
+// Margin & Padding Classes (Like BS)
+$space-amounts: (1,2,3,4,5);
+
+@each $space in $space-amounts {
+    .m-#{$space} {
+        margin: #{$space * 20px};
+    }
+
+    .my-#{$space} {
+        margin: #{$space * 20px} 0;
+    }
+    
+    .p-#{$space} {
+        padding: #{$space * 20px};
+    }
+
+    .py-#{$space} {
+        padding: #{$space * 20px} 0;
+    }
+}

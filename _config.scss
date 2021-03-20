@@ -1,2 +1,35 @@
+// Constants
 $primary-color: #fff;
 $secondary-color: rgb(45, 161, 45);
+$font-stack: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+
+// Mixins & Functions 
+@function set-text-color($color) {
+    @if (lightness($color) > 40) {
+        @return #000;
+    }
+    @else {
+        @return #fff;
+    }
+}
+
+@mixin set-back-and-text-color($color) {
+    background-color: $color;
+    color: set-text-color($color);
+}
+
+@function white-vv-black($color) {
+    @if ($color == #fff) {
+        @return #000;
+    }
+
+    @else if ($color == #000) {
+        @return #fff;
+    }
+
+    @else {
+        @error "#{$color} not supported, use f|0"
+    }
+}
